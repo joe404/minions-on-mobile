@@ -16,7 +16,7 @@
   - Compares to
     - [react.min.js 0.14.3](https://cdnjs.com/libraries/react): 135.6KB
 
-### Commint: react-router in
+### Commit: react-router in
 
 - Dependencies
   - react

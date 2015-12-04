@@ -1,16 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router';
 
+import {Toolbar, ToolbarGroup, FlatButton, RaisedButton} from 'material-ui';
+
 class Footer extends React.Component {
   render() {
     return (
-      <footer>
-        <ul>
-          <li><Link to="/">Dashboard</Link></li>
-          <li><Link to="/profile">Profile</Link></li>
-          <li><Link to="/help">Help</Link></li>
-        </ul>
-      </footer>
+      <Toolbar>
+        <ToolbarGroup>
+          <FlatButton label="Dashoboard" linkButton={true} containerElement={<Link to="/"/>}/>
+          <FlatButton label="Profile" linkButton={true} containerElement={<Link to="/profile"/>}/>
+          <RaisedButton label="Join us" linkButton={true} containerElement={<Link to="/help"/>} primary={true}/>
+        </ToolbarGroup>
+      </Toolbar>
     );
   }
 }
