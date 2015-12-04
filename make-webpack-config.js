@@ -83,6 +83,9 @@ module.exports = function(options) {
     module: {
       loaders: loaders
     },
+    resolve: {
+      extensions: ["", ".webpack.js", ".web.js", ".js", ".jsx"]
+    },
     plugins: plugins,
     debug: options.debug,
     devtool: options.devtool,
